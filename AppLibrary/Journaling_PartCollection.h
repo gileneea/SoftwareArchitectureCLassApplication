@@ -6,6 +6,9 @@ namespace Application
 	class Part;
 	class PartFile;
 	class PartBuilder;
+	/// <summary>
+	/// Implements Journaling for Part builders
+	/// </summary>
 }
 
 

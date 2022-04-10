@@ -5,12 +5,15 @@
 
 enum JournalPartBuilderTypes
 {
-	JournalTypesSinglePart, /**Represents the part is a single part object. */
-	JournalTypesMultiPart /**Represents the part is a multi part object. */
+	JournalTypesSinglePart, /**Represents that the part is a single part object. */
+	JournalTypesMultiPart /**Represents that the part is a multi-part object. */
 };
 
 namespace Application
 {
+	/// <summary>
+	/// Builds a part
+	/// </summary>
 	class Part;
 
 	class APPLIBRARY_API PartBuilder : public GuidObject

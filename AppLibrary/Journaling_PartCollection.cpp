@@ -7,7 +7,6 @@
 
 void Journaling_PartCollection_CreatePartBuilder(Application::PartFile* part, Application::Part* part)
 {
-	//If Journaling write the thing things
 	if (IsJournaling())
 	{
 		JournalStartCall("CreateBlockBuilder", part);

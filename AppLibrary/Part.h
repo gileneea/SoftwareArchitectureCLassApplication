@@ -10,9 +10,15 @@ void ProcessPart(std::ifstream& streamObject);
 
 namespace Application
 {
+	/// <summary>
+	///  Part Object
+	/// </summary>
 	class APPLIBRARY_API IPart : public GuidObject
 	{
 	public:
+		/// <summary>
+		///  Returns version of the specified Part
+		/// </summary>
 		virtual std::string GetVersion() = 0;
 		IPart(int guid) : GuidObject(guid)
 		{

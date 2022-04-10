@@ -5,7 +5,7 @@ namespace AutomationAPI
 	class PartBuilder;
 	class Part;
 	/// <summary>
-	/// PartCollection comment
+	/// Creates Part builders
 	/// </summary>
 	class AUTOMATIONBINDING_API PartCollection
 	{
@@ -15,11 +15,13 @@ namespace AutomationAPI
 		virtual ~PartCollection();
 
 		/// <summary>
-		/// Create a Part builder.
+		/// Creates a Part builder.
 		/// </summary>
 		/// <param name="part"> if nullptr is passed in this will be created in 
-		/// create mode, otherwise it be in edit mode.</param>
-		/// <returns></returns>
+		/// create mode, otherwise it will be in edit mode.</param>
+		/// <returns>
+		/// Null
+		/// </returns>
 		PartBuilder* CreatePartBuilder(Part* part);
 
 
